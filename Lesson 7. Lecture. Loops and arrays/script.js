@@ -45,5 +45,3 @@
 //   pass = Number(prompt('Введите пароль'));
 //   count++;
 // } while (pass !== 234);
-
-// 40:36

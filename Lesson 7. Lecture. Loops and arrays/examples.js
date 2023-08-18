@@ -42,6 +42,13 @@ while (true) {
   //будет выполняться бесконечное количество раз
 }
 
+// const students = [];
+students.push('Иванов');
+students.push('Петров');
+students.push('Сидоров');
+
+console.log(students); // ['Иванов', 'Петров', 'Сидоров'];
+
 const student1 = 'Ivanov';
 const student2 = 'Petrov';
 const student3 = 'Sidorov';
