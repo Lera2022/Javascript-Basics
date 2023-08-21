@@ -43,6 +43,7 @@ while (true) {
 }
 
 // const students = [];
+
 students.push('Иванов');
 students.push('Петров');
 students.push('Сидоров');
