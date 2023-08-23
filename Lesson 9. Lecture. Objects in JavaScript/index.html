@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script src="script.js"></script>
+  <script>
+    const product = {
+      name: 'Стол',
+      price: 2000,
+      count: 0,
+      userIsRegistered: false,
+      reg: function () {
+        this.userIsRegistered = true;
+      },
+      countProduct: function () {
+        if (this.count > 0) {
+          console.log('Вы можете купить данный товар');
+        } else {
+          console.log('Данный товар нельзя добавить в корзину');
+        }
+      },
+      buyProduct: function () {
+        if (this.userIsRegistered) {
+          console.log('Товар в корзине');
+        } else {
+          console.log('Вам необходимо зарегистрироваться сначала выполнить product.reg()');
+        }
+      }
+    }
+    product.buyProduct();
+    product.reg();
+    product.buyProduct();
+    // console.log(product);
+    // let productSale = product;
+    // console.log(productSale);
+    // productSale.price = 1500;
+    // console.log(productSale);
+    // console.log(product);
+    // let productNew = product;
+    // productNew.text = 'lorem';
+    // console.log(product);
+    // console.log(productSale);
+    // console.log(productNew);
+    const productTest = {
+      text: 'hello',
+      price: 1000
+    }
+    productTest;
+    for (const key in productTest) {
+      // console.log(productTest.key);
+      console.log(productTest[key]);
+    }
+  </script>
+</body>
+
+</html>
